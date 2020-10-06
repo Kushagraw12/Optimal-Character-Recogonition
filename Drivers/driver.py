@@ -85,7 +85,7 @@ model.compile(loss='categorical_crossentropy',
               optimizer='rmsprop',
               metrics=['accuracy'])
 
-model.load_weights('./weights/z-1-weights-0.8679.h5')
+model.load_weights('../Weights/z-1-weights-0.8679.h5')
 #img1 = cv2.imread('s1.png',0)
 #rows,cols = img_str.shape
 
@@ -116,7 +116,7 @@ he = []
 lab = []
 test = []
 for i in range(6284, 10000):
-    test.append(io.imread("./test/test/"+str(i)+".Bmp",as_gray=True))
+    test.append(io.imread("../test/test/"+str(i)+".Bmp",as_gray=True))
     he.append(i)
     lab.append(str(i).split('.')[0])
 
