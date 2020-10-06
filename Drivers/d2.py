@@ -60,7 +60,7 @@ cmodel.compile(loss='categorical_crossentropy',
               optimizer='rmsprop',
               metrics=['accuracy'])
 
-cmodel.load_weights('./weights/z-1-weights-0.6181.h5')
+cmodel.load_weights('../Weights/z-1-weights-0.6181.h5')
 
 #img1 = cv2.imread('s1.png',0)
 #rows,cols = img_str.shape
